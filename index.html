@@ -11,8 +11,7 @@
     }
   </style>
     </head>
-    <body class="bg-gray-100 text-gray-800">
-
+    <body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
         <!-- Header -->
         <header class="bg-blue-600 text-white py-6 shadow-md">
             <div class="container mx-auto px-4">
@@ -30,7 +29,7 @@
             <button onclick="filterProjects('website')"
                 class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Website</button>
             <button onclick="filterProjects('design')"
-                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Desain</button>
+                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Design</button>
             <button onclick="filterProjects('aplikasi')"
                 class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Aplikasi</button>
         </div>
@@ -47,21 +46,65 @@
                         Website</h2>
                     <p class="text-sm text-gray-600 mb-4">Website organisasi
                         himpunan mahasiswa informatika.</p>
-                    <a href="#"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
+                    <a href="https://organisasi-website.vercel.app/"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
                 </div>
 
-                <!-- Desain Project -->
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Cat Store Website
+                        with laravel</h2>
+                    <p class="text-sm text-gray-600 mb-4">Website adopsi
+                        kucing.</p>
+                    <a href="#"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
+                </div>
+
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Personal portofolio
+                        [1]</h2>
+                    <p class="text-sm text-gray-600 mb-4">First website personal
+                        portofolio.</p>
+                    <a href="https://s4annn.github.io/personal_portofolio-1/"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
+                </div>
+
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Simple Ai bot clone
+                        [Gemini Api]</h2>
+                    <p class="text-sm text-gray-600 mb-4">Simple chatbot clone
+                        with gemini api.</p>
+                    <a href="https://sndyytp-ai-bot-clone.netlify.app/"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
+                </div>
+
+                <!-- Website Project -->
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">LinkTree Clone</h2>
+                    <p class="text-sm text-gray-600 mb-4">Website Clone dari
+                        LinkTree.</p>
+                    <a href="https://s4annlinktree.netlify.app/"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
+                </div>
+
+                <!-- Design Project -->
                 <div
                     class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-                    <h2 class="text-xl font-semibold mb-2">Desain Simple food
+                    <h2 class="text-xl font-semibold mb-2">Design Simple food
                         apps</h2>
-                    <p class="text-sm text-gray-600 mb-4">Desain grafis untuk
+                    <p class="text-sm text-gray-600 mb-4">Design grafis untuk
                         aplikasi makanan.</p>
                     <a href="#"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
                 </div>
 
                 <!-- Aplikasi Project -->
@@ -73,51 +116,39 @@
                         berbasis Java untuk pengelolaan transaksi dan stok
                         barang.</p>
                     <a href="#"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
                 </div>
 
-                <!-- Website Project -->
-                <div
-                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-                    <h2 class="text-xl font-semibold mb-2">Sistem Informasi
-                        Perpustakaan</h2>
-                    <p class="text-sm text-gray-600 mb-4">Aplikasi berbasis web
-                        untuk manajemen buku dan peminjaman.</p>
-                    <a href="#"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
-                </div>
-
-                <!-- Desain Project -->
+                <!-- Design Project -->
                 <div
                     class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-                    <h2 class="text-xl font-semibold mb-2">UI/UX Apps Money
+                    <h2 class="text-xl font-semibold mb-2">Design Apps Money
                         Tracker</h2>
-                    <p class="text-sm text-gray-600 mb-4">Desain grafis aplikasi
+                    <p class="text-sm text-gray-600 mb-4">Design grafis aplikasi
                         Money Tracker.</p>
-                    <a href="UI/UX/moneytracker/index.html"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
+                    <a href="Design/moneytracker/index.html"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
                 </div>
 
-                <!-- Desain Project -->
+                <!-- Design Project -->
                 <div
                     class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-                    <h2 class="text-xl font-semibold mb-2">UI/UX Personal
+                    <h2 class="text-xl font-semibold mb-2">Design Personal
                         Portofolio</h2>
-                    <p class="text-sm text-gray-600 mb-4">Desain grafis personal
+                    <p class="text-sm text-gray-600 mb-4">Design grafis personal
                         portofolio.</p>
-                    <a href="desain/personalportofolio/index.html"
-                        class="text-blue-600 hover:underline font-medium">Lihat
-                        Detail →</a>
+                    <a href="Design/personalportofolio/index.html"
+                        class="text-blue-600 hover:underline font-medium">View
+                        Details →</a>
                 </div>
 
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-6 mt-10">
+        <footer class="bg-gray-800 text-white py-6 mt-10 ">
             <div class="container mx-auto px-4 text-center">
                 <p>&copy; 2025 list projects. Dibuat oleh sandy.</p>
             </div>
