@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projects S4annn</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+    .active-filter {
+      @apply bg-blue-600 text-white;
+    }
+  </style>
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+
+        <!-- Header -->
+        <header class="bg-blue-600 text-white py-6 shadow-md">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl font-bold">List Projects</h1>
+                <p class="text-sm">Pilih kategori untuk melihat proyek
+                    terkait</p>
+            </div>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div
+            class="container mx-auto px-4 py-6 flex flex-wrap gap-2 justify-center">
+            <button onclick="filterProjects('all')"
+                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Semua</button>
+            <button onclick="filterProjects('website')"
+                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Website</button>
+            <button onclick="filterProjects('design')"
+                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Desain</button>
+            <button onclick="filterProjects('aplikasi')"
+                class="filter-btn bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-xl hover:bg-blue-100 transition">Aplikasi</button>
+        </div>
+
+        <!-- Project Grid -->
+        <main class="container mx-auto px-4 pb-10">
+            <div id="projectGrid"
+                class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Website Project -->
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Organization
+                        Website</h2>
+                    <p class="text-sm text-gray-600 mb-4">Website organisasi
+                        himpunan mahasiswa informatika.</p>
+                    <a href="#"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+                <!-- Desain Project -->
+                <div
+                    class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Desain Simple food
+                        apps</h2>
+                    <p class="text-sm text-gray-600 mb-4">Desain grafis untuk
+                        aplikasi makanan.</p>
+                    <a href="#"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+                <!-- Aplikasi Project -->
+                <div
+                    class="project-card aplikasi bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Aplikasi Kasir
+                        Toko</h2>
+                    <p class="text-sm text-gray-600 mb-4">Aplikasi desktop
+                        berbasis Java untuk pengelolaan transaksi dan stok
+                        barang.</p>
+                    <a href="#"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+                <!-- Website Project -->
+                <div
+                    class="project-card website bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">Sistem Informasi
+                        Perpustakaan</h2>
+                    <p class="text-sm text-gray-600 mb-4">Aplikasi berbasis web
+                        untuk manajemen buku dan peminjaman.</p>
+                    <a href="#"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+                <!-- Desain Project -->
+                <div
+                    class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">UI/UX Apps Money
+                        Tracker</h2>
+                    <p class="text-sm text-gray-600 mb-4">Desain grafis aplikasi
+                        Money Tracker.</p>
+                    <a href="UI/UX/moneytracker/index.html"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+                <!-- Desain Project -->
+                <div
+                    class="project-card design bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                    <h2 class="text-xl font-semibold mb-2">UI/UX Personal
+                        Portofolio</h2>
+                    <p class="text-sm text-gray-600 mb-4">Desain grafis personal
+                        portofolio.</p>
+                    <a href="desain/personalportofolio/index.html"
+                        class="text-blue-600 hover:underline font-medium">Lihat
+                        Detail →</a>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-6 mt-10">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 list projects. Dibuat oleh sandy.</p>
+            </div>
+        </footer>
+
+        <!-- JS Filter Function -->
+        <script>
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update active button style
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active-filter'));
+      event.target.classList.add('active-filter');
+    }
+
+    // Default to showing all
+    filterProjects('all');
+  </script>
+
+    </body>
+</html>
